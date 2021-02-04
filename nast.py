@@ -1,4 +1,6 @@
-stellen = ['argentinierstrasse', 'donaukanal', 'langobardenstrasse', 'lassallestrasse', 'liesingbach', 'neubaugurtel', 'opernringinnen', 'opernringaussen', 'wienzeile', 'margaritensteg', 'operngasse', 'praterstern']
+stellen = ['argentinierstrasse', 'donaukanal', 'langobardenstrasse', 'lassallestrasse', 'liesingbach',
+		   'neubaugurtel', 'opernringinnen', 'opernringaussen', 'wienzeile', 'margaritensteg', 'operngasse',
+		   'praterstern']
 monat = {
 	'Jänner': 1,
 	'Februar': 2,

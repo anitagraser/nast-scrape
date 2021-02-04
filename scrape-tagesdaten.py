@@ -26,7 +26,7 @@ class Harvester(NastHarvester):
 		try:
 			data = json.loads(data)
 		except ValueError:
-			print("Failure for item %s" % item)
+			print("Failure for item %s" % data)
 			return False
 		data = data['jscall'][0]
 		data = json.loads(data[data.find('((')+2:-len(').val)')])['val']
@@ -96,7 +96,7 @@ extractor = Extractor()
 
 for stelle in nast.stellen:
 	for monat in range(1, 13):
-		for jahr in [2011, 2012, 2013]:
+		for jahr in range(2011, 2021):  #[2011, 2012, 2013]:
 			datasets.put({'stelle': stelle, 'jahr': jahr, 'monat': monat})
 datasets.put(None)
 

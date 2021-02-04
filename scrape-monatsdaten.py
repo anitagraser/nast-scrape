@@ -25,7 +25,7 @@ class Harvester(NastHarvester):
 			try:
 				data = json.loads(data)
 			except ValueError:
-				print("Failure for item %s" % item)
+				print("Failure for item %s" % stelle)
 				continue
 			data = data['jscall'][0]
 			data = json.loads(data[data.find('((')+2:-len(').val)')])['val']
@@ -92,6 +92,6 @@ storer.join()
 
 pickle.dump(data, open('monatsdaten.pickle', 'wb'))
 
-
+print('Finished!')
 		
 
